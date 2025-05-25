@@ -115,6 +115,7 @@ section>h2 {
 /* Profiles */
 #profiles {
     margin-top: 42px;
+    padding-bottom: 0;
 
     .container {
         gap: 17px;
@@ -128,13 +129,18 @@ section>h2 {
 
 /* Up Next */
 #up-next {
+    padding-top: 0;
 
     .container {
         flex-direction: column;
+        gap: 11px;
+        background-color: var(--background-color);
+        padding: 16px 12px;
     }
 
     .event {
         display: flex;
+        gap: 15px;
     }
 }
 
