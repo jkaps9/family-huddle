@@ -58,18 +58,23 @@ header {
 header button {
     background: none;
     border: none;
-    width: var(--button-width);
-    height: var(--button-height);
-}
 
-header button>img {
-    width: var(--button-width);
-    height: var(--button-height);
+    svg {
+        width: var(--button-width);
+        height: var(--button-height);
+        fill: #000000;
+    }
 }
 
 #profile-button {
     background-color: var(--main-color);
     border-radius: 999px;
+    width: var(--button-width);
+    height: var(--button-height);
+
+    svg {
+        fill: var(--background-color);
+    }
 }
 
 .logo-wrapper {
@@ -77,10 +82,10 @@ header button>img {
     padding: 8px 37px;
     color: #FFFFFF;
     margin-left: auto;
-}
 
-.logo-wrapper h1 {
-    font-weight: 400;
+    h1 {
+        font-weight: 400;
+    }
 }
 
 .icon-wrapper {
