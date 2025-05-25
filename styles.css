@@ -10,9 +10,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: "Inter", sans-serif;
 
     --background-color: #D9D9D9;
     --main-color: #330CFF;
+    --button-width: 45px;
+    --button-height: 45px;
 }
 
 body>* {
@@ -55,11 +58,13 @@ header {
 header button {
     background: none;
     border: none;
+    width: var(--button-width);
+    height: var(--button-height);
 }
 
 header button>img {
-    width: 45px;
-    height: 45px;
+    width: var(--button-width);
+    height: var(--button-height);
 }
 
 #profile-button {
@@ -69,9 +74,13 @@ header button>img {
 
 .logo-wrapper {
     background-color: var(--main-color);
-    padding: 8px;
+    padding: 8px 37px;
     color: #FFFFFF;
     margin-left: auto;
+}
+
+.logo-wrapper h1 {
+    font-weight: 400;
 }
 
 .icon-wrapper {
@@ -80,4 +89,29 @@ header button>img {
 
 footer {
     min-height: 103px;
+}
+
+footer nav ul {
+    padding: 17px 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+footer nav ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+
+    svg {
+        width: var(--button-width);
+        height: var(--button-height);
+        fill: var(--main-color);
+    }
 }
