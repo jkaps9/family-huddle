@@ -106,12 +106,19 @@ header button {
 /* Main */
 .container {
     display: flex;
-    gap: 17px;
+}
+
+section>h2 {
+    text-transform: uppercase;
 }
 
 /* Profiles */
 #profiles {
     margin-top: 42px;
+
+    .container {
+        gap: 17px;
+    }
 
     .container>div {
         border-bottom: 1px solid black;
@@ -119,6 +126,17 @@ header button {
     }
 }
 
+/* Up Next */
+#up-next {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .event {
+        display: flex;
+    }
+}
 
 /* FOOTER */
 footer {
