@@ -42,6 +42,10 @@ section {
     flex: 1;
 }
 
+a {
+    text-decoration: none;
+}
+
 .hidden {
     display: none;
 }
@@ -51,8 +55,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    color: var(--main-color);
-
 }
 
 header button {
@@ -80,11 +82,11 @@ header button {
 .logo-wrapper {
     background-color: var(--main-color);
     padding: 8px 37px;
-    color: #FFFFFF;
     margin-left: auto;
 
     h1 {
         font-weight: 400;
+        color: #FFFFFF;
     }
 }
 
