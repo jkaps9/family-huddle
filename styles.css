@@ -34,3 +34,17 @@ section {
     padding: 15px;
     flex: 1;
 }
+
+.hidden {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header>button {
+    background: none;
+    border: none;
+}
