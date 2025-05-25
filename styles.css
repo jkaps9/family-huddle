@@ -40,6 +40,7 @@ main {
 section {
     padding: 15px;
     flex: 1;
+    margin: 0 48px;
 }
 
 a {
@@ -50,6 +51,7 @@ a {
     display: none;
 }
 
+/* HEADER */
 header {
     min-height: 113px;
     display: flex;
@@ -60,6 +62,8 @@ header {
 header button {
     background: none;
     border: none;
+    width: var(--button-width);
+    height: var(--button-height);
 
     svg {
         width: var(--button-width);
@@ -68,23 +72,27 @@ header button {
     }
 }
 
-#profile-button {
+.profile-button {
     background-color: var(--main-color);
     border-radius: 999px;
+    border: none;
     width: var(--button-width);
     height: var(--button-height);
 
     svg {
+        width: var(--button-width);
+        height: var(--button-height);
         fill: var(--background-color);
     }
 }
 
 .logo-wrapper {
     background-color: var(--main-color);
-    padding: 8px 37px;
+    padding: 7px 37px;
     margin-left: auto;
 
     h1 {
+        font-size: 20px;
         font-weight: 400;
         color: #FFFFFF;
     }
@@ -92,8 +100,27 @@ header button {
 
 .icon-wrapper {
     margin-left: 28px;
+    max-height: var(--button-height);
 }
 
+/* Main */
+.container {
+    display: flex;
+    gap: 17px;
+}
+
+/* Profiles */
+#profiles {
+    margin-top: 42px;
+
+    .container>div {
+        border-bottom: 1px solid black;
+        padding-bottom: 15px;
+    }
+}
+
+
+/* FOOTER */
 footer {
     min-height: 103px;
 }
