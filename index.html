@@ -42,7 +42,7 @@
 
     <main>
         <nav id="main-menu" class="hidden">
-            <button id="back">
+            <button id="back-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#e3e3e3">
                     <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
@@ -64,7 +64,7 @@
                     <div class="menu-text-container">
                         <p>Contact Us</p>
                     </div>
-                    <button>
+                    <button id="contact-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                             fill="#e3e3e3">
                             <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
@@ -77,7 +77,20 @@
         </nav>
 
         <form action="" id="contact-form" class="hidden">
-
+            <h2>Contact Us</h2>
+            <p>
+                <input type="text" placeholder="ENTER NAME" id="fullname" name="fullname">
+            </p>
+            <p>
+                <input type="email" placeholder="ENTER EMAIL" id="email" name="email">
+            </p>
+            <p>
+                <input type="tel" placeholder="PHONE NUMBER (OPTIONAL)" id="telephone" name="telephone">
+            </p>
+            <p>
+                <textarea name="message" id="message" placeholder="MESSAGE"></textarea>
+            </p>
+            <button type="submit" id="submit">SUBMIT</button>
         </form>
         <section id="profiles">
             <div class="container">
