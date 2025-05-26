@@ -206,8 +206,8 @@ section>h2 {
     justify-content: flex-end;
     margin: 14px 14px 0;
 
-    position: absolute;
-    bottom: 14px;
+    position: fixed;
+    bottom: 127px;
     right: 14px;
 }
 
