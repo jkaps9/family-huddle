@@ -43,7 +43,6 @@ main {
 }
 
 section {
-    padding: 15px;
     flex: 1;
     margin: 0 48px;
 }
@@ -147,6 +146,30 @@ section>h2 {
         display: flex;
         gap: 15px;
     }
+}
+
+/* Calendar */
+
+/* Action */
+.action-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 14px;
+}
+
+.action-container button {
+    background-color: var(--main-color);
+    color: #FFFFFF;
+    border: none;
+    padding: 2px 4px;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.action-container button:first-child {
+    border-right: 1px solid #FFFFFF;
 }
 
 /* FOOTER */
