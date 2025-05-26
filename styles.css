@@ -112,8 +112,99 @@ header button {
     display: flex;
 }
 
-section>h2 {
+h2 {
+    font-weight: 400;
+    font-size: 24px;
     text-transform: uppercase;
+}
+
+button {
+    appearance: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+/* NAV */
+#main-menu {
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 22px 14px 0;
+
+    #back svg {
+        height: 35px;
+        width: 35px;
+    }
+
+    .menu-text-container {
+        padding: 12px 24px;
+        background-color: var(--background-color);
+    }
+
+    svg {
+        fill: #000000;
+    }
+
+    ul {
+        margin-top: 24px;
+        padding-left: 26px;
+    }
+
+    li {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 8px;
+        align-items: center;
+        padding-bottom: 20px;
+
+        p {
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        button {
+            border: 4px solid black;
+            border-radius: 999px;
+            height: 32px;
+            width: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                flex: 1;
+            }
+        }
+    }
+
+    #invite {
+        align-self: stretch;
+        background-color: var(--main-color);
+        color: #E5E1FF;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 12px 0;
+        margin: 78px 26px 0;
+    }
+
+    #logout {
+        align-self: center;
+        background-color: var(--main-color);
+        color: #E5E1FF;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 8px 20px;
+        margin: 280px 26px 0;
+    }
 }
 
 /* Profiles */
@@ -136,8 +227,6 @@ section>h2 {
     margin-top: 23px;
 
     h2 {
-        font-weight: 400;
-        font-size: 24px;
         margin-bottom: 10px;
     }
 
@@ -182,12 +271,6 @@ section>h2 {
         .inactive {
             background-color: var(--background-color);
         }
-    }
-
-    h2 {
-        font-weight: 400;
-        font-size: 24px;
-        text-transform: uppercase;
     }
 
     svg {
