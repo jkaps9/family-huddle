@@ -31,7 +31,7 @@ body>* {
 header,
 footer {
     flex: 0;
-    padding: 10px 13px;
+    padding: 0 13px;
 
     background-color: var(--background-color);
 }
@@ -61,6 +61,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding-bottom: 10px;
 }
 
 header button {
@@ -119,10 +120,10 @@ section>h2 {
 /* Profiles */
 #profiles {
     margin-top: 42px;
-    padding-bottom: 0;
 
     .container {
         gap: 17px;
+        justify-content: flex-end;
     }
 
     .container>div {
@@ -133,7 +134,13 @@ section>h2 {
 
 /* Up Next */
 #up-next {
-    padding-top: 0;
+    margin-top: 23px;
+
+    h2 {
+        font-weight: 400;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
 
     .container {
         flex-direction: column;
@@ -149,12 +156,56 @@ section>h2 {
 }
 
 /* Calendar */
+#calendar {
+    margin-top: 31px;
+
+    .month-year-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .grid-container {
+        background-color: var(--background-color);
+        height: 234px;
+
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto repeat(5, 1fr);
+        justify-items: stretch;
+        align-items: stretch;
+        gap: 14px;
+        padding: 10px;
+
+        text-align: center;
+
+        .inactive {
+            background-color: var(--background-color);
+        }
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    svg {
+        fill: #000000;
+    }
+
+    .day {
+        background-color: #FFFFFF;
+
+    }
+}
 
 /* Action */
 .action-container {
     display: flex;
     justify-content: flex-end;
-    margin: 14px;
+    margin: 14px 14px 0;
 
     position: absolute;
     bottom: 14px;
@@ -178,7 +229,7 @@ section>h2 {
 
 /* FOOTER */
 footer {
-    min-height: 103px;
+    max-height: 103px;
 }
 
 footer nav ul {
