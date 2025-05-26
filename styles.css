@@ -40,6 +40,7 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 section {
@@ -154,6 +155,10 @@ section>h2 {
     display: flex;
     justify-content: flex-end;
     margin: 14px;
+
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
 }
 
 .action-container button {
