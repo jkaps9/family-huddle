@@ -108,6 +108,14 @@ header button {
     max-height: var(--button-height);
 }
 
+header#signin {
+    justify-content: center;
+
+    .logo-wrapper {
+        margin: 0;
+    }
+}
+
 /* Main */
 .container {
     display: flex;
